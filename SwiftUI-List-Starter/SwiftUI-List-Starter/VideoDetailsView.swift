@@ -55,16 +55,3 @@ struct VideoDetailsView_Previews: PreviewProvider {
         VideoDetailsView(video: VideoList.topTen.first!)
     }
 }
-
-struct StandardButton: View {
-    var title: String
-    var body: some View {
-        Text(title)
-            .bold()
-            .font(.title2)
-            .frame(width: 280, height: 50)
-            .background(Color(.systemRed))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-    }
-}
