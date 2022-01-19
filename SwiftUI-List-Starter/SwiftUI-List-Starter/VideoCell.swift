@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct VideoCell: View {
+struct VideoCell: View{
+    
     var video: Video
     var body: some View {
         Image(video.imageName)
@@ -27,12 +28,5 @@ struct VideoCell: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         }
-        
-    }
-}
-
-struct VideoCell_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoCell(video: Video())
     }
 }
