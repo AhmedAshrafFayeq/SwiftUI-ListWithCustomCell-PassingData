@@ -8,24 +8,30 @@
 import SwiftUI
 
 struct VideoListView: View {
+    var videos: [Video] = VideoList.topTen
     var body: some View {
-        HStack{
-            Image("average-dev")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 70)
-                .cornerRadius(4)
-            
-            VStack(alignment: .leading, spacing: 5){
-                Text("I'm an awesome developer")
-                    .fontWeight(.semibold)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
+
+        NavigationView{
+            List(videos, id: \.id){ video in
+                Image(video.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 70)
+                    .cornerRadius(4)
+                    .padding(.vertical, 4)
                 
-                Text("January 19, 2022")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                VStack(alignment: .leading, spacing: 5){
+                    Text(video.title)
+                        .fontWeight(.semibold)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.5)
+                    
+                    Text(video.uploadDate)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
             }
+            .navigationTitle("Sean's Top 10")
         }
     }
 }
