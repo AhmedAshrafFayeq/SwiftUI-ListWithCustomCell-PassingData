@@ -58,8 +58,8 @@
 			children = (
 				EDBC4AA126334A5900D3EE9D /* SwiftUI_List_StarterApp.swift */,
 				EDBC4AA326334A5900D3EE9D /* VideoListView.swift */,
-				EDBC4AB126334A7100D3EE9D /* Video.swift */,
 				2D9B382F279890A400087CD9 /* VideoDetailsView.swift */,
+				EDBC4AB126334A7100D3EE9D /* Video.swift */,
 				EDBC4AA526334A5A00D3EE9D /* Assets.xcassets */,
 				EDBC4AAA26334A5A00D3EE9D /* Info.plist */,
 				EDBC4AA726334A5A00D3EE9D /* Preview Content */,
