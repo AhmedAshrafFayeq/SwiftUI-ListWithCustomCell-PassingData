@@ -45,8 +45,7 @@ struct VideoDetailsView: View {
             Link(destination: video.url, label: {
                 StandardButton(title: "Watch Now")
             })
-        }
-        
+        }        
     }
 }
 

@@ -2,7 +2,7 @@
 //  Video.swift
 //  SwiftUI-List-Starter
 //
-//  Created by Sean Allen on 4/23/21.
+//  Created by Ahmed Fayeq on 19/01/2022.
 //
 
 import SwiftUI
